@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease; /* Animation for header */
+    background-color: #4CAF50; /* Green header */
+    padding: 20px; /* Padding around header */
+    color: white; /* White text */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Form Styles */
+.form-container {
+    background-color: white; /* White background for form */
+    padding: 20px;
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    max-width: 600px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form horizontally */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+.form-group input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s; /* Transition for border color on focus */
+}
+
+.form-group input:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Fieldset Styles */
+.form-fieldset {
+    margin: 15px 0; /* Space around fieldsets */
+    padding: 10px; /* Padding for fieldsets */
+    border: 1px solid #ccc; /* Border for fieldsets */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.form-fieldset legend {
+    font-weight: bold; /* Bold legend text */
+    color: #4CAF50; /* Green color for legends */
+}
+
+/* Button Styles */
+.calculate-button {
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effect */
+}
+
+.calculate-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Results Container */
+.results-container {
+    background-color: #ffffff; /* White background for results */
+    padding: 15px; /* Padding for results container */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    margin: 20px auto; /* Center results container */
+    max-width: 600px; /* Limit width of results */
+}
+
+.results-container h3 {
+    color: #4CAF50; /* Green color for heading */
+    margin-bottom: 15px; /* Space below heading */
+    text-align: center; /* Centered heading */
+}
+
+/* Result Item Styles */
+.result-item {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between label and value */
+    margin-bottom: 10px; /* Space between result items */
+    padding: 10px; /* Padding for each result item */
+    border-bottom: 1px solid #eee; /* Light border between items */
+}
+
+.result-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.result-item span {
+    font-weight: bold; /* Bold text for labels */
+    color: #333; /* Darker text for clarity */
+}
+
+.result-item p {
+    margin: 0; /* No margin for paragraphs */
+    font-size: 16px; /* Font size for result values */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .form-container,
+    .results-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .calculate-button {
+        width: 100%; /* Full width for button on small screens */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}

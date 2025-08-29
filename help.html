@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Help - Tax Filing</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <header>
+        <h1>Expert Help</h1>
+    </header>
+    <main>
+        <form id="expertHelpForm" class="form-container">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="problemType">Type of Problem:</label>
+                <select id="problemType" required>
+                    <option value="">Select a problem type</option>
+                    <option value="income">Income Declaration Issues</option>
+                    <option value="deductions">Deductions Queries</option>
+                    <option value="tds">TDS Related Questions</option>
+                    <option value="penalty">Late Filing Penalties</option>
+                    <option value="taxRegime">Tax Regime Selection</option>
+                    <option value="form">Form Filling Assistance</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="assistanceType">Type of Assistance Needed:</label>
+                <select id="assistanceType" required>
+                    <option value="">Select assistance type</option>
+                    <option value="general">General Advice</option>
+                    <option value="detailed">Detailed Guidance</option>
+                    <option value="review">Document Review</option>
+                    <option value="calculation">Calculation Help</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Question:</label>
+                <textarea id="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
